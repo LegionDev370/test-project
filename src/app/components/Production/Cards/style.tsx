@@ -24,6 +24,7 @@ export const ButtonWrap = styled.div`
   justify-content: center;
 `;
 export const CardListItem = styled.li`
+  width: 100%;
   max-width: 413px;
   margin-left: 0;
   min-height: 439px;
