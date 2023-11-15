@@ -1,0 +1,13 @@
+.jobLink {
+  color: #595959;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.64px;
+  text-decoration: none;
+}
+.jobLink:hover {
+  color: #3498db;
+}

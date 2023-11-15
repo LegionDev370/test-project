@@ -1,0 +1,15 @@
+.slick-dots li button:before {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Customize active dot */
+.slick-dots li.slick-active button:before {
+  color: #00c9c9;
+}
+@media screen and (max-width: 1082px) {
+  .slider-image {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -9,14 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/slick-carousel": "^1.6.40",
+    "@types/uuid": "^9.0.7",
+    "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.2"
+    "react-hydration-provider": "^2.0.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.12",
+    "typescript": "^5"
   }
 }
