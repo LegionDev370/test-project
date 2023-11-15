@@ -2,7 +2,8 @@
 import { FC, ReactNode } from "react";
 import React, { useState } from "react";
 import SimpleSlider from "../Slider/slider";
-import { Container, Header, Wrapper } from "./style";
+import { Header } from "./style";
+import { Container } from "../General/style";
 import { SliderWrapper } from "./style";
 const HeaderMenu: FC<{ children: ReactNode }> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,16 +15,14 @@ const HeaderMenu: FC<{ children: ReactNode }> = ({ children }) => {
     setIsOpen(false);
   };
   return (
-    <Container>
-      <Header>
+    <Header>
+      <Container>
         {children}
-        <Wrapper>
-          <SliderWrapper>
-            <SimpleSlider />
-          </SliderWrapper>
-        </Wrapper>
-      </Header>
-    </Container>
+        <SliderWrapper>
+          <SimpleSlider />
+        </SliderWrapper>
+      </Container>
+    </Header>
   );
 };
 export default HeaderMenu;

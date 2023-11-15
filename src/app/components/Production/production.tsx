@@ -1,7 +1,8 @@
 "use client";
 import { FC, ReactNode } from "react";
-import { Wrapper } from "../Header/style";
+import { Container } from "../General/style";
+
 const Production: FC<{ children: ReactNode }> = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+  return <Container>{children}</Container>;
 };
 export default Production;

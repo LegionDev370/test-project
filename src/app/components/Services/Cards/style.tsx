@@ -19,7 +19,7 @@ export const CardList = styled.ul`
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 30px;
+    row-gap: 74px;
     column-gap: 20px;
   }
 `;

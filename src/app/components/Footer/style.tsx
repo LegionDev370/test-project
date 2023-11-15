@@ -9,3 +9,8 @@ export const Footer = styled.footer`
   background-size: cover;
   background-image: url(${FooterBackground.src});
 `;
+export const Container = styled.div`
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+`;

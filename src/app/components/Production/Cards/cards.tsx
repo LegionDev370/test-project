@@ -10,6 +10,7 @@ import {
   LinkFlex,
   RightArrowBtn,
   Flex,
+  ButtonWrap,
 } from "./style";
 import Image from "next/image";
 import styles from "@/app/components/Production/Cards/style.module.css";
@@ -24,11 +25,17 @@ const Cards = () => {
           <CardListItem key={item.id}>
             <Flex>
               <CardImg>
-                <Image src={item.path} alt={item.title} />
+                <Image
+                  className={styles.cardImage}
+                  src={item.path}
+                  alt={item.title}
+                />
               </CardImg>
               <CardItemTitle>{item.title}</CardItemTitle>
             </Flex>
-            <Button height={50}>Посмотреть все</Button>
+            <ButtonWrap>
+              <Button height={50}>Посмотреть все</Button>
+            </ButtonWrap>
           </CardListItem>
         ))}
       </CardList>

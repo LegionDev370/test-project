@@ -1,15 +1,15 @@
 import { FC, ReactNode } from "react";
-import { Wrapper } from "../Header/style";
 import { Section, Title } from "./style";
 import { Flex } from "./style";
+import { Container } from "../General/style";
 
 const Partners: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <Section>
-      <Title>ПАРТНЕРЫ</Title>
-      <Wrapper>
+      <Container>
+        <Title>ПАРТНЕРЫ</Title>
         <Flex>{children}</Flex>
-      </Wrapper>
+      </Container>
     </Section>
   );
 };

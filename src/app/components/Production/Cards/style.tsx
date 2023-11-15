@@ -1,21 +1,32 @@
 import styled from "styled-components";
 import arrowImage from "@/app/assets/icons/right-arrow.svg";
 export const CardList = styled.ul`
+  width: 100%;
   display: grid;
+  padding: 0;
   margin-top: 62px;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 50px;
   list-style: none;
-  @media screen and (max-width: 624px) {
-    grid-template-columns: repeat(1, 1fr);
+  justify-content: center; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+  @media screen and (max-width: 1010px) {
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
+  @media screen and (max-width: 624px) {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+`;
+export const ButtonWrap = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 export const CardListItem = styled.li`
   max-width: 413px;
-  width: 100%;
+  margin-left: 0;
   min-height: 439px;
-  padding: 17px 71px;
 `;
 export const CardImg = styled.div`
   display: flex;
@@ -25,9 +36,11 @@ export const CardImg = styled.div`
 export const Flex = styled.div`
   height: 300px;
   display: flex;
+  align-items: center;
   flex-direction: column;
 `;
 export const CardItemTitle = styled.p`
+  max-width: 190px;
   color: #363535;
   font-family: Roboto;
   font-size: 24px;
