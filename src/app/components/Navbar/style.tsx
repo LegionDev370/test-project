@@ -18,9 +18,8 @@ export const FlexLeft = styled.div`
   }
   @media screen and (max-width: 900px) {
     justify-content: flex-start;
+    column-gap: 10px;
     width: 100%;
-    margin-right: 20px;
-    column-gap: 20px;
   }
   @media screen and (max-width: 460px) {
     margin-right: 11px;
@@ -39,7 +38,7 @@ export const FlexRight = styled.div`
     max-width: 220px;
   }
   @media screen and (max-width: 900px) {
-    max-width: 200px;
+    max-width: 220px;
     justify-content: flex-end;
     column-gap: 15px;
   }
