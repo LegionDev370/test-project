@@ -1,4 +1,4 @@
-import CardImage1 from "@/app/assets/images/endeavor-large 1.png";
+import CardImage1 from "@/app/assets/images/endeavor-large1.png";
 import CardImage2 from "@/app/assets/images/image-2.png";
 import CardImage3 from "@/app/assets/images/image-3.png";
 import CardImage4 from "@/app/assets/images/image-4.png";

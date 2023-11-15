@@ -10,7 +10,6 @@ export const SliderWrapper = styled.div`
 export const Wrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
-  overflow-x: hidden;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const Nav = styled.nav`
   padding-top: 63px;
+  overflow-x: hidden;
 `;
 export const FlexLeft = styled.div`
   margin-right: auto;
