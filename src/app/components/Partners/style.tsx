@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   margin-top: 103px;
+  margin-bottom: 147px;
 `;
 export const Title = styled.h2`
   color: #0d4c93;
