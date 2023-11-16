@@ -33,7 +33,7 @@ import { useMyContext } from "../../context/context";
 const Content = () => {
   const { state, dispatch } = useMyContext();
   const onModal = () => {
-    dispatch({ type: "setModal", payload: 0.3 });
+    dispatch({ type: "setModal", payload: 0.25 });
     dispatch({ type: "setScroll", payload: 0 });
   };
   return (

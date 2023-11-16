@@ -9,7 +9,7 @@ export const ModalFlex: FC<{ top: number; children: ReactNode }> = styled.div`
   min-height: 610px;
   width: 100%;
   left: 50%;
-  top: ${({ top }) => (top ? `0` : "-50%")};
+  top: ${({ top }) => (top ? `${top}%` : "-50%")};
   transition: all linear 0.5s;
   border-radius: 30px;
   background: #fff;
