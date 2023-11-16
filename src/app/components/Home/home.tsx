@@ -10,9 +10,13 @@ import News from "../News/news";
 import SimpleSliderPartners from "../Partners/Slider/slider";
 import SimpleSliderNews from "../News/Slider/slider";
 import Partners from "../Partners/partners";
+import Modal from "../Modal/modal";
+import { useMyContext } from "../context/context";
 const Home: FC<{ children: ReactNode }> = ({ children }) => {
+  const { state, dispatch } = useMyContext();
   return (
     <>
+      <Modal top={state.modal.modalPosition} />
       {children}
       <main>
         <Production>
@@ -29,7 +33,7 @@ const Home: FC<{ children: ReactNode }> = ({ children }) => {
         </News>
         <Partners>
           <SimpleSliderPartners />
-        </Partners> 
+        </Partners>
       </main>
     </>
   );

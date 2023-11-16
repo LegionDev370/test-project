@@ -72,6 +72,7 @@ export const Item = styled.div`
   display: flex;
   align-items: center;
   column-gap: 20px;
+  cursor: pointer;
   @media screen and (max-width: 900px) {
     display: none;
   }
@@ -79,6 +80,7 @@ export const Item = styled.div`
 export const MapItem = styled.div`
   display: flex;
   align-items: center;
+  cursor: pointer;
   column-gap: 20px;
   @media screen and (max-width: 900px) {
     display: none;
@@ -91,6 +93,7 @@ export const SearchItem = styled.div`
   display: flex;
   align-items: center;
   column-gap: 20px;
+  cursor: pointer;
   @media screen and (max-width: 900px) {
     display: none;
   }
@@ -136,6 +139,7 @@ export const SocialItem = styled.div`
   column-gap: 15px;
   align-items: center;
   border-radius: 25px;
+  cursor: pointer;
   background: #fff;
   @media screen and (max-width: 900px) {
     display: none;
@@ -154,6 +158,7 @@ export const SocialItemFacebook = styled.div`
   align-items: center;
   border-radius: 25px;
   background: #fff;
+  cursor: pointer;
   @media screen and (max-width: 900px) {
     display: none;
   }

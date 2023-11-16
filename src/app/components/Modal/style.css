@@ -1,0 +1,18 @@
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #999;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Styles for the checked state */
+input[type="checkbox"]:checked + label::before {
+  background-image: url("../../assets//icons/check-image.png");
+}

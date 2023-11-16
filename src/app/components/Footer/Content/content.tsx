@@ -29,7 +29,13 @@ import Button from "../../Generic/Button";
 import LogoIcon from "@/app/assets/icons/logo.svg";
 import Link from "next/link";
 import styles from "./style.module.css";
+import { useMyContext } from "../../context/context";
 const Content = () => {
+  const { state, dispatch } = useMyContext();
+  const onModal = () => {
+    dispatch({ type: "setModal", payload: 0.3 });
+    dispatch({ type: "setScroll", payload: 0 });
+  };
   return (
     <Flex>
       <FlexItemLeft>
@@ -56,7 +62,9 @@ const Content = () => {
               </Rectangle>
               <PhoneTitle>+998 71 276-62-53 +998 71 276-62-54</PhoneTitle>
             </ContactWrapItem>
-            <Button height={50}>Оставить заявку</Button>
+            <Button onclick={() => onModal()} height={50}>
+              Оставить заявку
+            </Button>
           </ContactWrap>
         </LeftContent>
         <LogoWrap>

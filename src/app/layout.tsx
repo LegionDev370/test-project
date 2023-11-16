@@ -5,6 +5,7 @@ import "./styles/global.css";
 import General from "./components/General/general";
 import Content from "./components/Footer/Content/content";
 import FooterContent from "./components/Footer/footer";
+import { MyContextProvider } from "./components/context/context";
 const RobotoFont = Roboto({
   weight: ["400", "700", "300", "500"],
   style: ["normal", "italic"],
@@ -25,14 +26,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={RobotoFont.className}>
-        <Provider>
-          <General>
-            <>{children}</>
-            <FooterContent>
-              <Content />
-            </FooterContent>
-          </General>
-        </Provider>
+        <MyContextProvider>
+          <Provider>
+            <General>
+              <>{children}</>
+              <FooterContent>
+                <Content />
+              </FooterContent>
+            </General>
+          </Provider>
+        </MyContextProvider>
       </body>
     </html>
   );

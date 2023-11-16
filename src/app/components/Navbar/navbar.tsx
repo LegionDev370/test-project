@@ -68,7 +68,7 @@ const Navbar = () => {
           </SearchItem>
           <SocialItemFacebook>
             <SocialImage>
-              <Image priority src={Facebook} alt="Map icon" />
+              <Image priority src={Facebook} alt="facebook icon" />
             </SocialImage>
             <Link className={styles.socialLink} href={"#"}>
               Мы на Facebook
@@ -82,13 +82,13 @@ const Navbar = () => {
               Русский
             </Link>
             <SocialImage>
-              <Image priority src={Arrowdown} alt="Map icon" />
+              <Image priority src={Arrowdown} alt="arrow icon" />
             </SocialImage>
           </SocialItem>
           <MobileWrap>
             <SocialItemMobile>
               <SocialImage>
-                <Image priority src={FlagRussia} alt="Map icon" />
+                <Image priority src={FlagRussia} alt="flag icon" />
               </SocialImage>
               <SocialImage>
                 <Image priority src={Arrowdown} alt="arrow icon" />

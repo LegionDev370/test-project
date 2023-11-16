@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Container: FC<{
   height: any;
+  onClick: any;
   children: ReactNode;
 }> = styled.button`
   max-width: 270px;
